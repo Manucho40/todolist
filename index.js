@@ -49,3 +49,15 @@ function checkDelete(e) {
     }
 
 }
+
+
+// MODE NUIT
+
+const togl = document.getElementById(['dark-mode']);
+const page = document.querySelector(".page");
+const h1 = document.querySelector("h1");
+togl.addEventListener('change', () => {
+    page.classList.toggle('dark');
+    h1.classList.toggle('darkH1');
+    document.body.classList.toggle("darkBody");
+})

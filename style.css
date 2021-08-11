@@ -5,6 +5,7 @@ body{
     background-color: aqua;
     display: flex;
     justify-content: center;
+    transition: 1.2s linear;
 }
 .page{
     border-radius: 30px;
@@ -13,6 +14,7 @@ body{
     background-color: white;
     width: 600px;
     height: 680px;
+    transition: 0.5s linear;
 
     
 }
@@ -20,6 +22,7 @@ h1{
     text-align: center;
     font-size: 3rem;
     font-family: "BlowBrush", cursive;
+    transition: 0.3s linear;
 }
 
 .output{
@@ -78,4 +81,61 @@ i{
 
 i:hover{
     color: whitesmoke;
+}
+
+
+.toggle {
+    /* position: absolute;
+    right: 5rem; */
+
+    
+}
+
+
+.checkbox{
+    display: none;
+}
+
+.label{
+    height: 26px;
+    width: 50px;
+    background-color: rgb(71, 102, 102);
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #333;
+}
+
+.label .ball{
+    background: #eee;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    transform: translateX(0px);
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35, 1.78);
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(29px);
+}
+
+.fa-moon {
+    color: #333;
+}
+.dark{
+    background-color: black;
+}
+.darkH1{
+    color: #fff;
+}
+.darkBody{
+    background-color: #11151C;
 }
